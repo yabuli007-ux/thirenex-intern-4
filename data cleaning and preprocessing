@@ -1,0 +1,5 @@
+# Drop duplicates
+df = df.drop_duplicates()
+
+# Fill missing values
+df['column_name'] = df['column_name'].fillna(df['column_name'].mean())
