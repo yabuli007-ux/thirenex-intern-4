@@ -1,0 +1,10 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Correlation heatmap
+sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
+plt.show()
+
+# Trend over time (e.g., stock prices)
+sns.lineplot(x="Date", y="Price", data=df)
+plt.show()
